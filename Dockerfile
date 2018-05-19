@@ -147,7 +147,7 @@ RUN pip install pygmsh
 COPY geometry.py /live/lib 
 
 RUN cd /live/lib && \ 
-    mv geometry.py /usr/local/lib/python2.7/dist-packages/pygmsh/built_in/
+    mv geometry.py /usr/local/lib/python2.7/dist-packages/pygmsh/built_in/ && \
     git clone https://gitlab.onelab.info/gmsh/gmsh.git && \
     cd gmsh && \
     mkdir build && \
