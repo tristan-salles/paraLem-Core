@@ -259,7 +259,7 @@ class Geometry(object):
                                   numpy.ones(X.shape[1])), \
                    "The transformation matrix doesn't preserve circles;" \
                    " at least one eigenvalue lies off the unit circle."
-            X = dot(X,R.T)
+            X = numpy.dot(X,R.T)
             #dot(a, b)
 
 
